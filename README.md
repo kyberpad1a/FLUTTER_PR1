@@ -5,7 +5,7 @@
 Ход работы: 
 Выбираем первый макет.
 
-<img src="lib/assets/jjj.png" width=200 height=400/>
+<img src="assets/jjj.png" width=200 height=400/>
 
 Рисунок 1 - Первый выбранный макет
 
