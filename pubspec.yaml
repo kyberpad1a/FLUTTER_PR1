@@ -59,18 +59,18 @@ flutter:
 
 
   assets:
-    - lib/assets/image3.png
-    - lib/assets/frame23.png
-    - lib/assets/shape.png
-    - lib/assets/points.png
-    - lib/assets/image1.png
-    - lib/assets/shape_2.png
-    - lib/assets/shape3.png
-    - lib/assets/chevron.forward.png
-    - lib/assets/image5.png
-    - lib/assets/image6.png
-    - lib/assets/image7.png
-    - lib/assets/image8.png
+    - assets/image3.png
+    - assets/frame23.png
+    - assets/shape.png
+    - assets/points.png
+    - assets/image1.png
+    - assets/shape_2.png
+    - assets/shape3.png
+    - assets/chevron.forward.png
+    - assets/image5.png
+    - assets/image6.png
+    - assets/image7.png
+    - assets/image8.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
