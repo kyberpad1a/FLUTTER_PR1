@@ -18,13 +18,13 @@ backgroundColor: const Color.fromRGBO(3, 158, 162, 1));
 
 Результат: 
 
-<img src="lib/assets/bbb.jpg" width=200 height=400/> 
+<img src="assets/bbb.jpg" width=200 height=400/> 
 
 Рисунок 2 - Результат 1
 
 Выбираем второй макет.
 
-<img src="lib/assets/aaa.png" width=200 height=400/>
+<img src="assets/aaa.png" width=200 height=400/>
 
 Рисунок 3 - Второй макет
 
@@ -33,7 +33,7 @@ backgroundColor: const Color.fromRGBO(3, 158, 162, 1));
 
 Результат:
 
-<img src="lib/assets/ccc.jpg" width=200 height=400/>
+<img src="assets/ccc.jpg" width=200 height=400/>
 
 Рисунок 4 - Результат 2
 
@@ -41,14 +41,14 @@ backgroundColor: const Color.fromRGBO(3, 158, 162, 1));
 
 Выбираем третий макет.
  
-<img src="lib/assets/ddd.png" width=200 height=400/>
+<img src="assets/ddd.png" width=200 height=400/>
 
 Рисунок 5 - Третий макет
 
 В работе используем все те же приемы, что и в первых двух макетах.
 Результат:
 
-<img src="lib/assets/fff.jpg" width=200 height=400/>
+<img src="assets/fff.jpg" width=200 height=400/>
 
 Рисунок 6 - Результат 3
 
