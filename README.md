@@ -1,16 +1,35 @@
-# prak2
+# ПРАКТИЧЕСКАЯ РАБОТА №2
+Работа с sqflite
+Цель работы: установить необходимые библиотеки, научиться работать с sqflite в flutter, создать базу данных для магазина мебели.
 
-A new Flutter project.
+Ход работы:
+Устанавливаем необходимые библиотеки.
+<img src="assets/a.png" width=600 height=200/>
 
-## Getting Started
+Рисунок 1 – Библиотеки
 
-This project is a starting point for a Flutter application.
+Создаем файл databaserequest, в котором будут храниться запросы для БД.
+<img src="assets/b.png" width=400 height=200/> 
 
-A few resources to get you started if this is your first Flutter project:
+Рисунок 2 – databaserequest
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Создаем файл databasehelper. В нем будут описаны основные функции для работы с БД, например инициализация БД.
+<img src="assets/c.png" width=400 height=200/>
+ 
+Рисунок 3 – databasehelper
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Для хранения данных и взаимодействия с ними создаем сущности и модели.
+<img src="assets/d.png" width=400 height=200/>
+
+Рисунок 4 – Сущность
+
+<img src="assets/e.png" width=400 height=200/>
+ 
+Рисунок 5 – Модель
+
+Создаем модель и сущность для каждой таблицы БД.
+<img src="assets/f.png" width=400 height=200/>
+ 
+Рисунок 6 - Схема БД
+
+Вывод: удалось установить необходимые библиотеки, научиться работать с sqflite в flutter, создать базу данных для магазина мебели.
