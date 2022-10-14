@@ -6,7 +6,7 @@ class Manufacturer extends ManufacturerEntity{
   final String ManufacturerName;
 
 
-  Manufacturer({required this.ManufacturerCountry, required this.ManufacturerName}):super (ManufacturerCountry: ManufacturerCountry, ManufacturerName: ManufacturerName);
+  Manufacturer({required this.id, required this.ManufacturerCountry, required this.ManufacturerName}):super (id: id, ManufacturerCountry: ManufacturerCountry, ManufacturerName: ManufacturerName);
 
 Map<String, dynamic> toMap()
 {
@@ -15,6 +15,6 @@ Map<String, dynamic> toMap()
 }
 factory Manufacturer.toFromMap(Map<String, dynamic> json)
 {
-  return Manufacturer(ManufacturerCountry: json['json'], ManufacturerName: json['json']);
+  return Manufacturer(id: json['json'], ManufacturerCountry: json['json'], ManufacturerName: json['json']);
 }
 }

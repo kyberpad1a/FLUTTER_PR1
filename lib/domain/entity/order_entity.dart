@@ -5,5 +5,5 @@ class OrderEntity
   final int User_ID;
   
 
-  OrderEntity({required this.Furniture_ID, required this.User_ID, });
+  OrderEntity({required this.id, required this.Furniture_ID, required this.User_ID, });
 }

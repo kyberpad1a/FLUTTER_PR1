@@ -5,5 +5,5 @@ class ManufacturerEntity
   final String ManufacturerName;
   
 
-  ManufacturerEntity({required this.ManufacturerCountry, required this.ManufacturerName});
+  ManufacturerEntity({required this.id, required this.ManufacturerCountry, required this.ManufacturerName});
 }

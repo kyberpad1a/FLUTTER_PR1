@@ -6,7 +6,7 @@ class User extends UserEntity{
   final String password;
   final int id_role;
 
-  User({ required this.login, required this.password, required this.id_role}):super (login: login, password: password, id_role: id_role);
+  User({required this.id, required this.login, required this.password, required this.id_role}):super (id: id, login: login, password: password, id_role: id_role);
 
 Map<String, dynamic> toMap()
 {
@@ -15,6 +15,6 @@ Map<String, dynamic> toMap()
 }
 factory User.toFromMap(Map<String, dynamic> json)
 {
-  return User(login: json['json'], password: json['json'], id_role: json['json'],);
+  return User(id: json['json'], login: json['json'], password: json['json'], id_role: json['json'],);
 }
 }

@@ -4,7 +4,7 @@ class Material extends MaterialEntity{
   late int id;
   final String MaterialName;
 
-  Material({ required this.MaterialName}):super (MaterialName: MaterialName);
+  Material({required this.id, required this.MaterialName}):super (id: id, MaterialName: MaterialName);
 
 Map<String, dynamic> toMap()
 {
@@ -13,6 +13,6 @@ Map<String, dynamic> toMap()
 }
 factory Material.toFromMap(Map<String, dynamic> json)
 {
-  return Material(MaterialName: json['json']);
+  return Material(id: json['json'], MaterialName: json['json']);
 }
 }

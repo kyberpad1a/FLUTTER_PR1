@@ -5,7 +5,7 @@ class Order extends OrderEntity{
   final int Furniture_ID;
   final int User_ID;
 
-  Order({ required this.Furniture_ID, required this.User_ID}):super (Furniture_ID: Furniture_ID, User_ID: User_ID);
+  Order({required this.id, required this.Furniture_ID, required this.User_ID}):super (id: id, Furniture_ID: Furniture_ID, User_ID: User_ID);
 
 Map<String, dynamic> toMap()
 {
@@ -14,6 +14,6 @@ Map<String, dynamic> toMap()
 }
 factory Order.toFromMap(Map<String, dynamic> json)
 {
-  return Order(Furniture_ID: json['json'], User_ID: json['json']);
+  return Order(id: json['json'] ,Furniture_ID: json['json'], User_ID: json['json']);
 }
 }

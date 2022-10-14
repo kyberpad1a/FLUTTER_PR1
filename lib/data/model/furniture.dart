@@ -9,7 +9,7 @@ class Furniture extends FurnitureEntity{
   final int Manufacturer_ID;
   final int FurnitureType_ID;
 
-  Furniture({ required this.FurniturePrice, required this.FurnitureName, required this.Material_ID, required this.Size_ID, required this.Manufacturer_ID, required this.FurnitureType_ID}):super (FurniturePrice: FurniturePrice, FurnitureName: FurnitureName, Material_ID: Material_ID, Size_ID: Size_ID, Manufacturer_ID: Manufacturer_ID, FurnitureType_ID: FurnitureType_ID);
+  Furniture({required this.id, required this.FurniturePrice, required this.FurnitureName, required this.Material_ID, required this.Size_ID, required this.Manufacturer_ID, required this.FurnitureType_ID}):super (id: id, FurniturePrice: FurniturePrice, FurnitureName: FurnitureName, Material_ID: Material_ID, Size_ID: Size_ID, Manufacturer_ID: Manufacturer_ID, FurnitureType_ID: FurnitureType_ID);
 
 Map<String, dynamic> toMap()
 {
@@ -18,6 +18,6 @@ Map<String, dynamic> toMap()
 }
 factory Furniture.toFromMap(Map<String, dynamic> json)
 {
-  return Furniture(FurniturePrice: json['json'], FurnitureName: json['json'], Material_ID: json['json'], Size_ID: json['json'], Manufacturer_ID: json['json'], FurnitureType_ID: json['json'],);
+  return Furniture(id:json['json'], FurniturePrice: json['json'], FurnitureName: json['json'], Material_ID: json['json'], Size_ID: json['json'], Manufacturer_ID: json['json'], FurnitureType_ID: json['json'],);
 }
 }

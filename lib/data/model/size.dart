@@ -6,7 +6,7 @@ class Size extends SizeEntity{
   final double width;
   final double length;
 
-  Size({ required this.height, required this.length, required this.width}):super (height: height, width: width, length: length);
+  Size({required this.id, required this.height, required this.length, required this.width}):super (id: id, height: height, width: width, length: length);
 
 Map<String, dynamic> toMap()
 {
@@ -15,6 +15,6 @@ Map<String, dynamic> toMap()
 }
 factory Size.toFromMap(Map<String, dynamic> json)
 {
-  return Size(height: json['json'], width: json['json'], length: json['json'],);
+  return Size(id: json['json'], height: json['json'], width: json['json'], length: json['json'],);
 }
 }

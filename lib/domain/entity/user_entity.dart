@@ -5,5 +5,5 @@ class UserEntity
   final String password;
   final int id_role;
 
-  UserEntity({required this.login, required this.password, required this.id_role});
+  UserEntity({required this.id, required this.login, required this.password, required this.id_role});
 }

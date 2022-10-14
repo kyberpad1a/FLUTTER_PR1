@@ -8,7 +8,7 @@ class UserData extends UserDataEntity{
   final String Email;
   final int User_ID;
 
- UserData({ required this.Surname, required this.Name, required this.Patronymic, required this.Email, required this.User_ID}):super (Surname: Surname, Name: Name, Patronymic: Patronymic, Email: Email, User_ID: User_ID);
+ UserData({required this.id, required this.Surname, required this.Name, required this.Patronymic, required this.Email, required this.User_ID}):super (id: id, Surname: Surname, Name: Name, Patronymic: Patronymic, Email: Email, User_ID: User_ID);
 
 Map<String, dynamic> toMap()
 {
@@ -17,6 +17,6 @@ Map<String, dynamic> toMap()
 }
 factory UserData.toFromMap(Map<String, dynamic> json)
 {
-  return UserData(Surname: json['json'], Name: json['json'], Patronymic: json['json'], Email: json['json'], User_ID: json['json']);
+  return UserData(id: json['json'], Surname: json['json'], Name: json['json'], Patronymic: json['json'], Email: json['json'], User_ID: json['json']);
 }
 }
