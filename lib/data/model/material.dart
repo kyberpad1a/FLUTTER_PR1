@@ -13,6 +13,6 @@ Map<String, dynamic> toMap()
 }
 factory Material.toFromMap(Map<String, dynamic> json)
 {
-  return Material(id: json['json'], MaterialName: json['json']);
+  return Material(id: json['ID_Material'], MaterialName: json['materialname']);
 }
 }

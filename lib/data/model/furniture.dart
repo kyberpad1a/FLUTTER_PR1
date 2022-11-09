@@ -1,14 +1,24 @@
+// ignore_for_file: overridden_fields, non_constant_identifier_names
+
 import 'package:prak2/domain/entity/furniture_entity.dart';
 
 class Furniture extends FurnitureEntity{
+  @override
   late int id;
+  @override
   final double FurniturePrice;
+  @override
   final String FurnitureName;
+  @override
   final int Material_ID;
+  @override
   final int Size_ID;
+  @override
   final int Manufacturer_ID;
+  @override
   final int FurnitureType_ID;
 
+  // ignore: non_constant_identifier_names
   Furniture({required this.id, required this.FurniturePrice, required this.FurnitureName, required this.Material_ID, required this.Size_ID, required this.Manufacturer_ID, required this.FurnitureType_ID}):super (id: id, FurniturePrice: FurniturePrice, FurnitureName: FurnitureName, Material_ID: Material_ID, Size_ID: Size_ID, Manufacturer_ID: Manufacturer_ID, FurnitureType_ID: FurnitureType_ID);
 
 Map<String, dynamic> toMap()
@@ -18,6 +28,6 @@ Map<String, dynamic> toMap()
 }
 factory Furniture.toFromMap(Map<String, dynamic> json)
 {
-  return Furniture(id:json['json'], FurniturePrice: json['json'], FurnitureName: json['json'], Material_ID: json['json'], Size_ID: json['json'], Manufacturer_ID: json['json'], FurnitureType_ID: json['json'],);
+  return Furniture(id:json['ID_Furniture'], FurniturePrice: json['furnitureprice'], FurnitureName: json['furniturename'], Material_ID: json['material_id'], Size_ID: json['size_id'], Manufacturer_ID: json['manufacturer_id'], FurnitureType_ID: json['furnituretype_id'],);
 }
 }

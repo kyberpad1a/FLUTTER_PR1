@@ -24,7 +24,7 @@ class DataBaseHelper {
     _pathDB = join(_appDocumentDirectory!.path, 'furniturestore.db');
     if (Platform.isLinux || Platform.isMacOS || Platform.isWindows) {
       sqfliteFfiInit();
-      var database = await databaseFactoryFfi.openDatabase(_pathDB,
+      database = await databaseFactoryFfi.openDatabase(_pathDB,
           options: OpenDatabaseOptions(
             version: _version,
             onCreate: (db, version) async {
@@ -84,7 +84,8 @@ class DataBaseHelper {
     database.close();
     if (Platform.isLinux || Platform.isMacOS || Platform.isWindows) {
       databaseFactoryFfi.deleteDatabase(_pathDB);
-    } else
+    } else {
       deleteDatabase(_pathDB);
+    }
   }
 }

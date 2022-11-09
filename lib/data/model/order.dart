@@ -14,6 +14,6 @@ Map<String, dynamic> toMap()
 }
 factory Order.toFromMap(Map<String, dynamic> json)
 {
-  return Order(id: json['json'] ,Furniture_ID: json['json'], User_ID: json['json']);
+  return Order(id: json['ID_Order'] ,Furniture_ID: json['furniture_ID'], User_ID: json['user_ID']);
 }
 }

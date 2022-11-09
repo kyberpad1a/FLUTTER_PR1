@@ -15,6 +15,6 @@ Map<String, dynamic> toMap()
 }
 factory Size.toFromMap(Map<String, dynamic> json)
 {
-  return Size(id: json['json'], height: json['json'], width: json['json'], length: json['json'],);
+  return Size(id: json['ID_Size'], height: json['height'], width: json['width'], length: json['length'],);
 }
 }
